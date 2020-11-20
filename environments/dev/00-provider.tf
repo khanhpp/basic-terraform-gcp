@@ -1,4 +1,4 @@
 provider "google" {
-  project = "DEV-TIKI-INFRA"
+  project = "dev-tiki-infra"
   region  = "asia-east2"
 }

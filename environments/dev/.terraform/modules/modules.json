@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"webapp","Source":"./modules/webapp","Dir":"modules/webapp"},{"Key":"subnets","Source":"./modules/subnetwork","Dir":"modules/subnetwork"},{"Key":"vpc","Source":"./modules/vpc","Dir":"modules/vpc"},{"Key":"","Source":"","Dir":"."}]}
