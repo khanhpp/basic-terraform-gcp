@@ -2,6 +2,12 @@ variable "project_id" {
   description = "Project ID"
 }
 
+variable "image_name" {
+  default = "centos-cloud/centos-7"
+  description = "image name to use"
+
+}
+
 variable "region" {
   description = "Region"
 }
