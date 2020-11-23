@@ -11,6 +11,8 @@ module "subnets" {
   network_name          = module.vpc.network_name
   public_subnet_name    = var.public_subnet_name
   public_subnet_cidr    = var.public_subnet_cidr
+
+  depends_on            = [module.vpc]
 }
 
 module "webapp" {
@@ -19,4 +21,6 @@ module "webapp" {
   region                = var.public_subnet_region
   network_name          = module.vpc.network_name
   subnetwork_name       = var.public_subnet_name
+  
+  depends_on            = [module.vpc, module.subnets]
 }
